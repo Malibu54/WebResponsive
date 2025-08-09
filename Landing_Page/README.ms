@@ -214,7 +214,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ## 👨‍💻 Autor
 
 **Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/malibu54)
+- GitHub: [malibu54](https://github.com/malibu54)
 - LinkedIn: [Tu Perfil](https://linkedin.com/in/orianasoledad)
 
 ## 🙏 Agradecimientos
@@ -229,4 +229,4 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 **¡Si este proyecto te fue útil, dale una ⭐ en GitHub!**
 
-**¿Encontraste un bug o tienes una sugerencia?** [Abre un issue](https://github.com/tu-usuario/landing-page/issues)
+**¿Encontraste un bug o tienes una sugerencia?** [Abre un issue](https://github.com/malibu54/landing-page/issues)
