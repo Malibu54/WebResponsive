@@ -1,118 +1,131 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>Productos Premium</title>
+    <meta name="description" content="Descubre nuestros productos premium con calidad garantizada y envío rápido">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
 </head>
 
 <body>
-    <div id="page-wrapper">
-        <header id="header">
-            <div>
-                <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaQD_euwnp6StjAJjs1kmnRzHsSr5_Fv4qfC-ewyNj2kewkn0zH2e-CsRN042saYbshI8&usqp=CAU" alt="lorem ipsum logo" />
+    <header id="header">
+        <div>
+            <img id="header-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 40'%3E%3Ctext x='10' y='25' font-family='Inter, sans-serif' font-size='18' font-weight='700' fill='white'%3ELorem%3C/text%3E%3C/svg%3E" alt="Lorem Ipsum Logo" />
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">Cómo Funciona</a></li>
+                <li><a class="nav-link" href="#pricing">Precios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Bonjour</h2>
+        <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px;">
+            Descubre productos premium con calidad garantizada y la mejor experiencia de usuario
+        </p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input name="email" id="email" type="email" placeholder="Ingresa tu email aquí..." required />
+            <input id="submit" type="submit" value="¡Empecemos!" class="btn" />
+        </form>
+    </section>
+
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="icon">🔥</div>
+                <div class="desc">
+                    <h2>Calidad Premium</h2>
+                    <p>Productos cuidadosamente seleccionados con los más altos estándares de calidad para garantizar tu satisfacción completa.</p>
+                </div>
             </div>
-
-            <nav id="nav-bar">
-                <ul>
-                    <li><a class="nav-link" href="#features">Features</a></li>
-                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
-                </ul>
-            </nav>
-        </header>
-        <hr>
-
-        <div class="container"></div>
-
-        <section id="hero">
-            <h2>Bonjour</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input name="email" id="email" type="email" placeholder="Enter your email here..." required />
-                <input id="submit" type="submit" value="Let's Go!" class="btn" />
-            </form>
+            <div class="grid">
+                <div class="icon">🚚</div>
+                <div class="desc">
+                    <h2>Envío Rápido</h2>
+                    <p>Entrega express en 24-48 horas. Tu pedido llegará rápido y en perfectas condiciones directamente a tu puerta.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">⚡</div>
+                <div class="desc">
+                    <h2>Garantía Total</h2>
+                    <p>Respaldamos cada producto con una garantía completa. Si no estás satisfecho, te devolvemos tu dinero sin preguntas.</p>
+                </div>
+            </div>
         </section>
 
-        <div class="container">
-            <section id="features">
-                <div class="grid">
-                    <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-                    <div class="desc">
-                        <h2>Lorem Ipsum</h2>
-                        <p>
-                            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                        </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-                    <div class="desc">
-                        <h2>Fast Shipping</h2>
-                        <p>
-                            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                        </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="icon">
-                        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-                    </div>
-                    <div class="desc">
-                        <h2>Quality Assurance</h2>
-                        <p>
-                            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="how-it-works">
-                <iframe id="video" height="315" src="https://www.youtube.com/embed/watch?v=p5E6Q9pN9_Y" frameborder="0" allowfullscreen></iframe>
-            </section>
-            <section id="pricing">
-                <div class="product" id="tenor">
+        <section id="how-it-works">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 3rem; text-align: center;">Cómo Funciona</h2>
+                <iframe id="video" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        frameborder="0" 
+                        allowfullscreen
+                        loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2 style="font-size: 2.5rem; margin-bottom: 3rem; text-align: center;">Nuestros Planes</h2>
+                <div class="product">
                     <div class="level">Tenor</div>
                     <h2>$900</h2>
                     <ol>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
+                        <li>✓ Acceso básico completo</li>
+                        <li>✓ Soporte 24/7</li>
+                        <li>✓ Garantía de calidad</li>
+                        <li>✓ Actualizaciones gratuitas</li>
                     </ol>
-                    <button class="btn">Select</button>
+                    <button class="btn">Seleccionar</button>
                 </div>
-                <div class="product" id="bass">
+                <div class="product">
                     <div class="level">Bass</div>
                     <h2>$900</h2>
                     <ol>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum.</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
+                        <li>✓ Todo lo del plan Tenor</li>
+                        <li>✓ Funciones avanzadas</li>
+                        <li>✓ Prioridad en soporte</li>
+                        <li>✓ Análiticas detalladas</li>
                     </ol>
-                    <button class="btn">Select</button>
+                    <button class="btn">Seleccionar</button>
                 </div>
-                <div class="product" id="value">
+                <div class="product">
                     <div class="level">Value</div>
                     <h2>$999</h2>
                     <ol>
-                        <li>Plays in your house</li>
-                        <li>Great for Playground</li>
-                        <li>Lorem ipsum dolor.</li>
-                        <li>Lorem ipsum.</li>
+                        <li>✓ Experiencia completa</li>
+                        <li>✓ Perfecto para equipos</li>
+                        <li>✓ Integraciones premium</li>
+                        <li>✓ Consultoría incluida</li>
                     </ol>
-                    <button class="btn">Select</button>
+                    <button class="btn">Seleccionar</button>
                 </div>
-            </section>
-            <footer>
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <span>Copyright 2022, Original Loren Ipsum</span>
-            </footer>
-        </div>
-    </div>
-</body>
+            </div>
+        </section>
 
+        <footer>
+            <ul>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <span>Copyright 2024, Original Lorem Ipsum</span>
+        </footer>
+    </div>
+<script src="main.js"></script>
+   
+</body>
 </html>
