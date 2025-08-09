@@ -296,14 +296,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 
 ---
 
-## 📞 Soporte
+## 👨‍💻 Autor
 
-¿Tienes preguntas? ¡Contáctanos!
-
-- 📧 **Email**: soporte@tudominio.com
-- 💬 **Discord**: [Servidor de la Comunidad](https://discord.gg/tuservidor)
-- 🐦 **Twitter**: [@tuhandle](https://twitter.com/tuhandle)
-- 📖 **Documentación**: [docs.tudominio.com](https://docs.tudominio.com)
 
 ---
 
