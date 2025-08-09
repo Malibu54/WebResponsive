@@ -283,9 +283,11 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 ## 👨‍💻 Autor
 
 **Tu Nombre**
-- GitHub: [@tuusername](https://github.com/tuusername)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tuperfil)
-- Email: tu@email.com
+- GitHub: [malibu54](https://github.com/malibu54)
+- LinkedIn: [Tu Perfil](https://linkedin.com/in/orianasoledad)
+
+
+---
 
 ## 🙏 Reconocimientos
 
@@ -293,11 +295,6 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.m
 - **Google Fonts** por las tipografías
 - **Unsplash** por las imágenes de fondo
 - **MDN Web Docs** por la documentación de referencia
-
----
-
-## 👨‍💻 Autor
-
 
 ---
 
