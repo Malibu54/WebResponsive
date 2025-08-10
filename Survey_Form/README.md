@@ -48,21 +48,18 @@ Un formulario de encuesta moderno, accesible y completamente responsive, optimiz
 - **Formularios de contacto** avanzados
 - **Encuestas de investigación** de mercado
 
-## 🛠️ Instalación y Uso
 
-### Uso Básico
-```bash
-# Clona o descarga el archivo HTML
-# No requiere instalación - funciona directamente en el navegador
-```
+## 📁 Estructura del Proyecto
 
-### Estructura de Archivos
 ```
-formulario-encuesta/
-├── index.html          # Archivo principal (todo incluido)
-├── README.md           # Documentación
-└── assets/            # Opcional: recursos adicionales
-    └── screenshots/   # Capturas de pantalla
+Survey_Form/
+│
+├── index.html          # Página principal
+├── style.css          # Página estilos
+├── README.md           # Este archivo
+└── assets/             # Carpeta para recursos adicionales
+     └── image.png/         # Imágenes locales
+
 ```
 
 ### Implementación
