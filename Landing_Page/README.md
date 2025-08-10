@@ -1,6 +1,6 @@
 # 🚀 Landing Page Optimizada - Lorem Ipsum
 
-![Web Screenshot](/assets/Screenshot%202025-08-10%20131030.png)
+![Web Screenshot](/Landing_Page/asset/image.png)
 
 Una landing page moderna y altamente optimizada construida con HTML5, CSS3 puro y JavaScript vanilla. Diseñada para máximo rendimiento, experiencia de usuario superior y conversiones efectivas.
 
