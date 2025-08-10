@@ -4,6 +4,7 @@
 
 Una landing page moderna y altamente optimizada construida con HTML5, CSS3 puro y JavaScript vanilla. Diseñada para máximo rendimiento, experiencia de usuario superior y conversiones efectivas.
 
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![Version](https://img.shields.io/badge/version-2.0-blue.svg)
 ![Performance](https://img.shields.io/badge/performance-A+-green.svg)
 ![Mobile](https://img.shields.io/badge/mobile-responsive-brightgreen.svg)
@@ -48,18 +49,18 @@ Una landing page moderna y altamente optimizada construida con HTML5, CSS3 puro 
 - **Google Fonts** - Tipografía Inter optimizada
 - **SVG** - Íconos y gráficos escalables
 
-## 📂 Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
 ```
-landing-page/
+Landing_Page/
 │
-├── index.html              # Archivo principal HTML
-├── README.md              # Documentación del 
-└── main.js                # dinamica de la web
+├── index.html          # Página principal
+├── style.css          # Página estilos
+├── README.md           # Este archivo
+└── assets/             # Carpeta para recursos adicionales
+     └── image.png/         # Imágenes locales
 
 ```
-
-## 🚀 Instalación y Uso
 
 ### Opción 1: Uso Directo
 ```bash
