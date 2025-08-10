@@ -1,6 +1,6 @@
 # 📋 Formulario de Encuesta Optimizado
 
-![Web Screenshot](/assets/Screenshot%202025-08-10%20131030.png)
+![Web Screenshot](/Survey_Form/asset/image.png)
 
 Un formulario de encuesta moderno, accesible y completamente responsive, optimizado para performance y experiencia de usuario.
 
