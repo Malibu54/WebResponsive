@@ -1,174 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+    <meta name="description" content="Complete guide to Jython 3 Roadmap - Python implementation for the JVM with Java integration">
+    <meta name="keywords" content="Jython, Python, Java, JVM, programming, documentation">
+    <meta name="author" content="Jython Documentation">
     <link rel="stylesheet" href="style.css">
+    <title>Jython 3 Roadmap - Complete Guide</title>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+    
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>Jython 3 Roadmap</header>
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li>
-                <a class="nav-link" href="#Who_uses_Jython?">Who_uses_Jython?</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#Installer_Jar">Installer Jar</a>
-            </li>
-            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
-            <li><a class="nav-link" href="#Reference">Reference</a></li>
+    <a href="#main-doc" class="skip-to-content">Skip to content</a>
+    
+    <button class="mobile-nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle navigation menu">
+        ☰
+    </button>
 
+    <nav id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-header">
+            <h1>Jython 3</h1>
+            <p>Roadmap & Guide</p>
+        </div>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#who-uses-jython">Who Uses Jython?</a></li>
+            <li><a class="nav-link" href="#installation">Installation Guide</a></li>
+            <li><a class="nav-link" href="#getting-started">Getting Started</a></li>
+            <li><a class="nav-link" href="#examples">Code Examples</a></li>
+            <li><a class="nav-link" href="#resources">Resources</a></li>
+        </ul>
     </nav>
 
-    <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <article>
+    <main id="main-doc" role="main">
+        <section class="main-section" id="introduction" tabindex="-1">
+            <header class="section-header">Introduction to Jython</header>
+            <article class="section-content">
+                <p>
+                    The <strong>Jython project</strong> provides implementations of Python that run on the Java Virtual Machine, giving Python developers access to the vast ecosystem of Java libraries while maintaining Python's elegant syntax and productivity advantages.
+                </p>
+
+                <div class="info-box">
+                    <h4>Current Status</h4>
+                    <p>The current stable release (Jython 2.7.x) supports Python 2 syntax. Development towards Python 3 compatibility is actively ongoing in the project's GitHub repository.</p>
+                </div>
 
                 <p>
-                    The Jython project provides implementations of Python in Java, providing to Python the benefits of running on the JVM and access to classes written in Java. The current release (a Jython 2.7.x) only supports Python 2 (sorry). There is work towards a Python
-                    3 in the project’s GitHub repository. Jython implementations are freely available for both commercial and non-commercial use. They are distributed with source code under the PSF License v2. Jython is complementary to Java and is especially
-                    suited for the following tasks:
+                    Jython implementations are freely available for both commercial and non-commercial use, distributed with source code under the <strong>PSF License v2</strong>. This makes Jython an excellent choice for enterprise environments and open-source projects alike.
+                </p>
+
+                <h3>Key Benefits</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>🔧 Embedded Scripting</h4>
+                        <p>Java programmers can integrate Jython libraries to allow end users to write scripts that extend application functionality, from simple automation to complex business logic.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>⚡ Interactive Development</h4>
+                        <p>Jython provides an interactive interpreter for experimenting with Java packages and debugging running applications in real-time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🚀 Rapid Prototyping</h4>
+                        <p>Python programs are typically 2-10x shorter than equivalent Java code, dramatically increasing developer productivity and reducing time-to-market.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="main-section" id="who-uses-jython" tabindex="-1">
+            <header class="section-header">Who Uses Jython?</header>
+            <article class="section-content">
+                <p>Jython is embedded in numerous enterprise and open-source projects across various industries. Here are some notable implementations:</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>IBM WebSphere</h4>
+                        <p>Uses Jython to provide powerful administrative scripting capabilities for enterprise application server management.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Apache Pig</h4>
+                        <p>Leverages Jython to support user-defined functions (UDFs) for big data processing and analytics workflows.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>JEM/JythonMusic</h4>
+                        <p>An innovative environment for music composition and creative programming using Jython's expressive capabilities.</p>
+                    </div>
+                </div>
+
+                <p>
+                    Many organizations choose Jython for its ability to bridge Python's ease of use with Java's enterprise-grade performance and security features. This makes it particularly valuable in:
                 </p>
                 <ul>
-                    <li>
-                        Embedded scripting - Java programmers can add the Jython libraries to their system to allow end users to write simple or complicated scripts that add functionality to the application.
-
-                    </li>
-                    <li>
-                        Interactive experimentation - Jython provides an interactive interpreter that can be used to interact with Java packages or with running Java applications. This allows programmers to experiment and debug any Java system using Jython.
-                    </li>
-                </ul>
-
-                <li>Rapid application development - Python programs are typically 2-10x shorter than the equivalent Java program. This translates directly to increased programmer productivity. The seamless interaction between Python and Java allows developers
-                    to freely mix the two languages both during development and in shipping products.
-                </li>
-            </article>
-        </section>
-        <section class="main-section" id="Who_uses_Jython?">
-            <header>Who_uses_Jython?</header>
-            <article>
-                <p>TJython is embedded in lots of projects. See some from MVNRepository:</p>
-
-                <ul>
-                    <li>
-                        IBM Websphere - Use Jython to provide administrative scripting capabilities.
-                    </li>
-                    <li>Apache PIG - Use Jython to support user defined functions.
-                    </li>
-                    <li>
-                        JEM/JythonMusic - An environment for music making and creative programming using Jython.
-                    </li>
+                    <li><strong>Financial Services:</strong> Risk analysis and algorithmic trading systems</li>
+                    <li><strong>Scientific Computing:</strong> Data analysis and visualization tools</li>
+                    <li><strong>Web Applications:</strong> Rapid development of web services and APIs</li>
+                    <li><strong>DevOps & Automation:</strong> Build systems and deployment pipelines</li>
                 </ul>
             </article>
         </section>
-        <section class="main-section" id="Installer_Jar">
-            <header>Installer Jar</header>
-            <article>
+
+        <section class="main-section" id="installation" tabindex="-1">
+            <header class="section-header">Installation Guide</header>
+            <article class="section-content">
                 <p>
-                    Jython 2.7.2 is distributed via an executable jar file installer. After downloading it, either double click the </p><code class="language-plaintext highlighter-rouge">jython-installer-2.7.2.jar</code>
-                <p>or run java with the -jar option</p>
-                <code>$ java -jar jython-installer-2.7.2.jar
-</code>
-                <p>
-                    This will start the regular GUI installer on most systems, or a console installer on headless systems. To force the installer to work in headless mode invoke the installer as:
+                    Jython 2.7.2 is distributed via an executable JAR file installer that works on any system with Java installed.
                 </p>
-                <pre class="highlight"><code>$ java -jar jython-installer-2.7.2.jar --console
-</code></pre>
+
+                <h3>Download and Install</h3>
+                <p>After downloading the installer, you have two options:</p>
+
+                <div class="code-container">
+                    <div class="code-label">GUI Installation (recommended)</div>
+                    <code class="code-block"># Double-click the installer file, or run:
+java -jar jython-installer-2.7.2.jar</code>
+                </div>
+
+                <div class="code-container">
+                    <div class="code-label">Console Installation (headless systems)</div>
+                    <code class="code-block"># For servers without GUI
+java -jar jython-installer-2.7.2.jar --console</code>
+                </div>
+
+                <div class="info-box">
+                    <h4>System Requirements</h4>
+                    <ul>
+                        <li>Java 8 or higher (OpenJDK or Oracle JDK)</li>
+                        <li>Minimum 512MB RAM (2GB+ recommended for development)</li>
+                        <li>50MB disk space for basic installation</li>
+                    </ul>
+                </div>
+
+                <h3>Verification</h3>
+                <p>After installation, verify Jython is working correctly:</p>
+                <div class="code-container">
+                    <code class="code-block"># Test the installation
+jython --version
+
+# Start interactive interpreter
+jython</code>
+                </div>
             </article>
         </section>
-        <section class="main-section" id="Hello_world">
-            <header>Hello world</header>
-            <article>
-                <p>To get started with writing Jython, open the Scratchpad and write your first "Hello world" Jython code:</p>
-                <code><span class="kn">import</span> <span class="nn">org.python.util.PythonInterpreter</span><span class="o">;</span>
+
+        <section class="main-section" id="getting-started" tabindex="-1">
+            <header class="section-header">Getting Started</header>
+            <article class="section-content">
+                <p>Let's create your first Jython program! This example demonstrates how to embed Python code within a Java application.</p>
+
+                <h3>Hello World Example</h3>
+                <div class="code-container">
+                    <div class="code-label">JythonHelloWorld.java</div>
+                    <code class="code-block"><span class="kn">import</span> <span class="nn">org.python.util.PythonInterpreter</span><span class="o">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">JythonHelloWorld</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">try</span><span class="o">(</span><span class="nc">PythonInterpreter</span> <span class="n">pyInterp</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PythonInterpreter</span><span class="o">())</span> <span class="o">{</span>
-      <span class="n">pyInterp</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="s">"print('Hello Jython World!')"</span><span class="o">);</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">(</span><span class="nc">PythonInterpreter</span> <span class="n">pyInterp</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PythonInterpreter</span><span class="o">())</span> <span class="o">{</span>
+            <span class="c">// Execute Python code from Java</span>
+            <span class="n">pyInterp</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="s">"print('Hello from Jython!')"</span><span class="o">);</span>
+            
+            <span class="c">// You can also run more complex Python code</span>
+            <span class="n">pyInterp</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="s">"""
+for i in range(3):
+    print(f'Message {i + 1}: Welcome to Jython!')
+            """</span><span class="o">);</span>
+        <span class="o">}</span>
     <span class="o">}</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</code>
+<span class="o">}</span></code>
+                </div>
 
+                <h3>Compilation and Execution</h3>
+                <div class="code-container">
+                    <code class="code-block"># Compile the Java class
+javac -cp jython.jar JythonHelloWorld.java
 
+# Run the program
+java -cp .:jython.jar JythonHelloWorld</code>
+                </div>
 
-                <p> Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
-                </p>
-                <p>
-                    h
-                </p>
-
-                <p>
-                    e
-                </p>
-
-                <p>
-                    l
-                </p>
-
-                <p>
-                    l
-                </p>
-
-                <p>
-                    l
-                </p>
-
-                <p>
-                    o
-                </p>
-
-                <p>
-                    j
-                </p>
-
-                <p>
-                    y
-                </p>
-
-                <p>
-                    th
-                </p>
-
-                <p>
-                    on
-                    <p>
-
-                        <p><strong>Goodbye Jython!</strong></p>
-                        <code><span class="kn">import</span> <span class="nn">org.python.util.PythonInterpreter</span><span class="o">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">GoodbyeJython</span> <span class="o">{</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">try</span><span class="o">(</span><span class="nc">PythonInterpreter</span> <span class="n">pyInterp</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PythonInterpreter</span><span class="o">())</span> <span class="o">{</span>
-      <span class="n">pyInterp</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="s">"print('Goodbye Jython!')"</span><span class="o">);</span>
-    <span class="o">}</span>
-  <span class="o">}</span>
-<span class="o">}</span>
-</code>
+                <div class="info-box">
+                    <h4>Expected Output</h4>
+                    <code class="inline-code">Hello from Jython!</code><br>
+                    <code class="inline-code">Message 1: Welcome to Jython!</code><br>
+                    <code class="inline-code">Message 2: Welcome to Jython!</code><br>
+                    <code class="inline-code">Message 3: Welcome to Jython!</code>
+                </div>
             </article>
         </section>
-        <section class="main-section" id="Reference">
-            <header>Reference</header>
-            <article>
-                <ul>
-                    <li>
-                        All the documentation in this page is taken from
-                        <a href="https://www.jython.org/index" target="_blank">Official Site</a>
-                    </li>
-                </ul>
-            </article>
-        </section>
-    </main>
-    <script src="ciclo.js"></script>
-</body>
 
-</html>
+        <section class="main-section" id="examples" tabindex="-1">
+            <header class="section-header">Advanced Examples</header>
+            <article class="section-content">
+                <h3>Working with Java Objects</h3>
+                <p>One of Jython's most powerful features is seamless Java integration:</p>
+
+                <div class="code-container">
+                    <div class="code-label">JavaIntegration.java</div>
+                    <code class="code-block"><span class="kn">import</span> <span class="nn">org.python.util.PythonInterpreter</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">JavaIntegration</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">try</span> <span class="o">(</span><span class="nc">PythonInterpreter</span> <span class="n">pyInterp</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">PythonInterpreter</span><span class="o">())</span> <span class="o">{</span>
+            <span class="c">// Create Java object and pass to Python</span>
+            <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">javaList</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+            <span class="n">pyInterp</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">"java_list"</span><span class="o">,</span> <span class="n">javaList</span><span class="o">);</span>
+            
+            <span class="c">// Manipulate Java object from Python</span>
+            <span class="n">pyInterp</span><span class="o">.</span><span class="na">exec</span><span class="o">(</span><span class="s">"""
+import java.util.Date as Date
+
+# Add items using Python syntax
+java_list.add('Hello')
+java_list.add('from')
+java_list.add('Python!')
+
+# Create Java objects from Python
+current_time = Date()
+java_list.add(str(current_time))
+
+print('List contents:')
+for item in java_list:
+    print(f'  - {item}')
+            """</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span></code>
+                </div>
+
+                <h3>File Processing Example</h3>
+                <div class="code-container">
+                    <div class="code-label">FileProcessor.py (Pure Jython Script)</div>
+                    <code class="code-block"><span class="c"># This script can access both Python and Java libraries</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span> <span class="k">as</span> <span class="nn">File</span>
+<span class="kn">import</span> <span class="nn">java.io.FileWriter</span> <span class="k">as</span> <span class="nn">FileWriter</span>
+<span class="kn">import</span> <span class="nn">java.io.BufferedReader</span> <span class="k">as</span> <span class="nn">BufferedReader</span>
+<span class="kn">import</span> <span class="nn">java.io.FileReader</span> <span class="k">as</span> <span class="nn">FileReader</span>
+
+<span class="k">def</span> <span class="nf">process_file</span><span class="p">(</span><span class="n">input_path</span><span class="p">,</span> <span class="n">output_path</span><span class="p">):</span>
+    <span class="s">"""Process a text file using Java I/O from Python"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c"># Read file using Java classes</span>
+        <span class="n">file_reader</span> <span class="o">=</span> <span class="n">BufferedReader</span><span class="p">(</span><span class="n">FileReader</span><span class="p">(</span><span class="n">input_path</span><span class="p">))</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span>
+        
+        <span class="n">line</span> <span class="o">=</span> <span class="n">file_reader</span><span class="o">.</span><span class="n">readLine</span><span class="p">()</span>
+        <span class="k">while</span> <span class="n">line</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>  <span class="c"># Process with Python</span>
+            <span class="n">line</span> <span class="o">=</span> <span class="n">file_reader</span><span class="o">.</span><span class="n">readLine</span><span class="p">()</span>
+        
+        <span class="n">file
