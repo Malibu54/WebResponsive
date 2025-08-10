@@ -1,5 +1,7 @@
 # 🚀 Landing Page Optimizada - Lorem Ipsum
 
+![Web Screenshot](/assets/Screenshot%202025-08-10%20131030.png)
+
 Una landing page moderna y altamente optimizada construida con HTML5, CSS3 puro y JavaScript vanilla. Diseñada para máximo rendimiento, experiencia de usuario superior y conversiones efectivas.
 
 ![Version](https://img.shields.io/badge/version-2.0-blue.svg)
