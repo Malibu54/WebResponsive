@@ -4,6 +4,9 @@
 
 ![License](https://img.shields.io/badge/License-PSF%20v2-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-green.svg)
 
 Una guía optimizada para el roadmap de Jython 3, implementación de Python que corre en la JVM (Java Virtual Machine).
 
@@ -86,36 +89,19 @@ Una guía optimizada para el roadmap de Jython 3, implementación de Python que 
 }
 ```
 
-## 🚀 Instalación y Uso
+## 📁 Estructura del Proyecto
 
-### Opción 1: Uso Directo
-1. Descarga el archivo HTML optimizado
-2. Abre en tu navegador web
-3. ¡Listo para usar!
+```
+Technical_documentation/
+│
+├── index.html          # Página principal
+├── style.css          # Página estilos
+├── README.md           # Este archivo
+└── assets/             # Carpeta para recursos adicionales
+     └── image.png/         # Imágenes locales
 
-### Opción 2: Servidor Local
-```bash
-# Con Python
-python -m http.server 8000
-
-# Con Node.js
-npx serve .
-
-# Con PHP
-php -S localhost:8000
 ```
 
-### Opción 3: Personalización
-```bash
-# Clona el proyecto
-git clone [tu-repositorio]
-
-# Personaliza estilos en la sección <style>
-# Modifica contenido en las secciones HTML
-# Agrega funcionalidades JavaScript según necesites
-```
-
-## ⚡ Optimizaciones Implementadas
 
 ### Performance
 - **Preload de fuentes críticas** para evitar FOIT/FOUT
@@ -144,7 +130,6 @@ git clone [tu-repositorio]
 - **First Input Delay**: < 100ms
 - **Lighthouse Score**: 95+ en todas las categorías
 
-## 🔧 Personalización
 
 ### Cambiar Colores
 ```css
